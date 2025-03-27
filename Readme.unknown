@@ -1,18 +1,18 @@
-# AI-Based Disk Scheduling Algorithms
+AI-Based Disk Scheduling Algorithms
 
-## 📌 Project Overview
+Project Overview
 This project implements and compares **AI-based disk scheduling algorithms** with traditional scheduling methods such as **First-Come-First-Serve (FCFS), Shortest Seek Time First (SSTF), and SCAN**. The goal is to **optimize disk seek time** and improve performance using AI-based predictive models.
 
-## 🚀 Features
-- ✅ **Traditional Algorithms**: FCFS, SSTF, SCAN, C-SCAN, LOOK
-- ✅ **AI-Based Scheduling**: Uses machine learning to predict optimal request order
-- ✅ **Graphical User Interface (GUI)**: Built using Tkinter for easy interaction
-- ✅ **Performance Metrics**: Total seek time, request order visualization
-- ✅ **Modular Code Structure**: Easy to extend and modify
+Features
+- Traditional Algorithms**: FCFS, SSTF, SCAN, C-SCAN, LOOK
+- AI-Based Scheduling**: Uses machine learning to predict optimal request order
+- Graphical User Interface (GUI)**: Built using Tkinter for easy interaction
+- Performance Metrics**: Total seek time, request order visualization
+- Modular Code Structure**: Easy to extend and modify
 
-## 📂 Project Structure
-```
-CPU-Scheduler/
+Project Structure
+
+CPU-Scheduler
 │── data/                         # Sample test data
 │── models/                       # AI-based scheduling models
 │   ├── ai_scheduler.py           # ML-based scheduler implementation
@@ -29,16 +29,16 @@ CPU-Scheduler/
 │── README.md                      # Documentation
 ```
 
-## 🛠️ Installation
-### **Prerequisites**
+Installation
+Prerequisites
 - Python 3.8 or later
 - Pip (Python package manager)
 
-### **Install Dependencies**
+Install Dependencies
 Run the following command to install required libraries:
-```bash
+bash
 pip install numpy scipy scikit-learn matplotlib tkinter
-```
+`
 
 ## 🎮 Usage
 ### **Run the GUI Interface**
@@ -59,7 +59,7 @@ python run.py --algorithm fcfs --requests "98, 183, 37, 122, 14, 124, 65, 67" --
 - `scan` → SCAN Algorithm
 - `ai` → AI-based optimized scheduling
 
-## 📊 Example Test Cases
+##  Example Test Cases
 ### **Test Case 1: FCFS Scheduling**
 #### **Input:**
 ```
