@@ -69,4 +69,6 @@ Total Seek Time: 640
 Performance Evaluation
 The AI-based scheduling algorithm is designed to **reduce seek time** by predicting optimal request sequences. It is tested against traditional methods to compare efficiency.
 
+License
+This project is licensed under the MIT License.
 
