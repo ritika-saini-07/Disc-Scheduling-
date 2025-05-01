@@ -12,31 +12,33 @@ Features
 
 Project Structure
 
-CPU-Scheduler
-│── data/                         # Sample test data
-│── models/                       # AI-based scheduling models
-│   ├── ai_scheduler.py           # ML-based scheduler implementation
-│── traditional_algorithms/        # Classic scheduling algorithms
+CPU-Scheduler/
+├── data/                         # Sample test data
+├── models/                       # AI-based scheduling models
+│   └── ai_scheduler.py           # ML-based scheduler implementation
+├── traditional_algorithms/       # Classic scheduling algorithms
 │   ├── __init__.py
 │   ├── fcfs.py                   # First-Come-First-Serve
 │   ├── sstf.py                   # Shortest Seek Time First
 │   ├── scan.py                   # SCAN algorithm
-│── visualization/                 # Plot and graph generation
-│── gui/                           # Graphical interface
-│   ├── main.py                    # GUI entry point
-│── utils/                         # Helper functions
-│── run.py                         # Main execution script
-│── README.md                      # Documentation
+│   ├── cscan.py                  # C-SCAN algorithm
+│   └── look.py                   # LOOK algorithm
+├── visualization/                # Plot and graph generation
+│   └── plot_results.py           # Visualization functions
+├── gui/                          # Graphical interface
+│   └── main.py                   # GUI entry point
+├── utils/                        # Helper functions
+├── run.py                        # Main execution script
+└── README.md                     # Documentation
 
 Installation
 Prerequisites
 - Python 3.8 or later
 - Pip (Python package manager)
 
-Install Dependencies
-Run the following command to install required libraries:
-bash
+Install Dependencies:
 pip install numpy scipy scikit-learn matplotlib tkinter
+pip install -r requirements.txt
 
 Usage
 Run the GUI Interface
@@ -53,6 +55,8 @@ Available Algorithms
 - fcfs = First Come First Serve
 - sstf = Shortest Seek Time First
 - scan = SCAN Algorithm
+- cscan → Circular SCAN
+- look → LOOK Algorithm
 - ai = AI-based optimized scheduling
 
 Example Test Cases
